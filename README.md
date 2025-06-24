@@ -12,6 +12,7 @@ Identify phishing indicators from a suspicious email by analyzing both the email
 
 1. Selected a suspicious email from my Gmail spam folder.
 2. Extracted full email headers and analyzed them using Google’s Mail Header Analyzer.
+   - Note: The full header file is not uploaded but was manually reviewed and used for the analysis.
 3. Noted key indicators in the header such as:
    - Unusual return path
    - SPF failure
