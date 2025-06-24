@@ -1,0 +1,58 @@
+PHISHING EMAIL ANALYSIS REPORT
+
+Task: Analyze a Phishing Email Sample  
+Source: Spam folder email – Subject: "💼 Work Hard, Play Harder – The Office Party Starts Now!"
+
+HEADER ANALYSIS:
+
+1. SPF: PASS  
+   - Domain: `interactivepv.com`  
+   - IP: `153.92.255.77` is authorized to send
+
+2. DKIM: PASS (2 signatures detected)  
+   - `interactivepv.com` and `sendib.com` – both domains passed DKIM
+
+3. Return-Path vs From mismatch  
+   - `Return-Path: noreply@mail.interactivepv.com`  
+   - `From: Julia Interactive <julia@interactivepv.com>`  
+   - These look similar but are commonly spoofed in phishing emails.
+
+4. Unusual Volume Mailing Indicators  
+   - `X-Mailer: Sendinblue`, `X-Mailin-Campaign`, `X-sib-id`: Bulk marketing email
+
+5. ARC and multiple relay hops present  
+   - Heavy routing might indicate masking origin or marketing relays
+
+EMAIL BODY ANALYSIS:
+
+1. Suspicious Content
+   - Promotes explicit, adult-themed “interactive shows”
+   - Content includes inappropriate and manipulated stories
+
+2. Unfamiliar & Misleading Links
+   - Uses domains like `r.mail.interactivepv.com`
+   - Link previews do not match visible link text
+
+3. Psychological Triggers
+   - Emotional manipulation (e.g., “unexpected turn”, “once-in-a-lifetime”)
+
+4. Grammar/Spelling Errors
+   - Poor formatting and unnatural sentence construction
+
+5. Unsubscribe Mechanism may be deceptive
+   - Clicking "unsubscribe" may validate your email to spammers
+
+CONCLUSION:
+
+This email is a high-confidence phishing/malicious spam message based on:
+- Misleading content with adult themes
+- Suspicious embedded links
+- Bulk mail indicators
+- Psychological manipulation tactics
+
+Recommendation: Do not interact with this email. Mark as spam/phishing and delete.
+
+Analysis Performed By:  
+Prasanna Srinivas K  
+Cyber Security Intern – Elevate Labs  
+Date: 24.06.2025
